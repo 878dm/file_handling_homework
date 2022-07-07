@@ -10,7 +10,7 @@ def main(data:str):
     for i in data :
         if i.isdigit():
             arr.append(i)
-    return min(arr)
+    return  int(min(arr))
 # Read data from file
 f=open('txt_file/data09.txt')
 data = f.read()

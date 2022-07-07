@@ -7,11 +7,9 @@ def main(data:str):
         list: return answer
     """
     arr=[]
-    for i in data:
-        if i.isalpha():
-            arr.append(i)
+    arr=data.isalpha()
     return arr
 # Read data from file
 f=open('txt_file/data04.txt')
-x=f.read()
-print(main(x))
+data=f.read()
+print(main(data))
