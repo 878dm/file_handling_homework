@@ -7,8 +7,13 @@ def main(data:str):
         list: return answer
     """
     arr=[]
-    arr=data.isalpha()
-    return arr
+    arr1=[]
+    for i in data:
+        if i.isdigit():
+            arr.append(i)
+        else :
+            arr1.append(i)
+    return arr1
 # Read data from file
 f=open('txt_file/data04.txt')
 data=f.read()
